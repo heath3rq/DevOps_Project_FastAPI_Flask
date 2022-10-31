@@ -1,7 +1,6 @@
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
-		sudo apt-get install sqlite3
 
 test:
 	python -m pytest -vv test_*.py
