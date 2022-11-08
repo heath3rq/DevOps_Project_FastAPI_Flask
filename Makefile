@@ -6,9 +6,9 @@ test:
 	python -m pytest -vv test_*.py
 
 format:	
-	black *.py dblib/*py
+	black *.py
 
 lint:
-	pylint --disable=R,C --ignore-patterns=test_.*?py *.py
+	pylint --disable=R,C test_hello.py
 
 all: install lint test format

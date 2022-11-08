@@ -4,7 +4,7 @@ WORKDIR /MS
 
 COPY ./requirements.txt /MS
 COPY ./main.py /MS
-COPY ./test_main.py /MS
+COPY ./test.py /MS
 
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
