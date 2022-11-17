@@ -11,3 +11,4 @@ uvicorn[standard]
 dask==2022.11.0
 dask[distributed]
 ipython==8.6.0
+emoji==2.2.0

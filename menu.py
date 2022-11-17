@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 import random
 
-def generatemenu(tips = 0.20, tax = 0.06875):
+# Menu items from https://www.youngjoni.com/menu/
+def generatemenu(tips=0.20, tax=0.06875):
     appetizer = {
         "Cauliflower": 17,
         "Bibim Grain Bowl": 18,
@@ -37,19 +38,19 @@ def generatemenu(tips = 0.20, tax = 0.06875):
         "Seasonal Crisp": 12,
     }
     cocktails = {
-        "Rickey (lemon, tarragon, plum, vodka)": 15,
-        "Bottineau (orange, vermouth, aquavit, whiskey)": 14,
-        "Spritz (carrot, raspberry ferment, vermouth, aperitif)": 14,
-        "Julep (pineapple, almond, ginger, genepy)": 16,
-        "Cobbler (banana, lemon, fino sherry, mezcal)": 13,
-        "Negroni (cardamom vermouth, amaro, gin)": 14,
-        "Sling (lime, cucumber, amaro, tequila)": 15,
-        "Old Fashioned (px sherry, mole bitters, rye, gin)": 16,
+        "Rickey": 15,
+        "Bottineau": 14,
+        "Spritz": 14,
+        "Julep": 16,
+        "Cobbler": 13,
+        "Negroni": 14,
+        "Sling": 15,
+        "Old Fashioned": 16,
     }
     randapp = random.sample(list(appetizer), 2)
     randmain = random.choice(list(maincourse))
     randdessert = random.choice(list(desserts))
     randdrinks = random.sample(list(cocktails), 2)
 
-    result = f"""Your order includes: {randapp[0]}, {randapp[1]}, {randmain}, {randdessert}, {randdrinks[0]} and {randdrinks[1]}. The total cost after gratuity and tax is ${(1+tips+tax)*(appetizer[randapp[0]] + appetizer[randapp[1]] + maincourse[randmain] + desserts[randdessert] + cocktails[randdrinks[0]] + cocktails[randdrinks[1]]):,.2f}."""
+    result = f"""Your meal includes: \U0001F60B {randapp[0]} and {randapp[1]} as appetizers; \U0001F355 {randmain} as the main course; \U0001F368 {randdessert} as dessert; \U0001F378 {randdrinks[0]} and {randdrinks[1]} as your drink choices. The total cost after gratuity and tax is ${(1+tips+tax)*(appetizer[randapp[0]] + appetizer[randapp[1]] + maincourse[randmain] + desserts[randdessert] + cocktails[randdrinks[0]] + cocktails[randdrinks[1]]):,.2f}."""
     return {"Result": result}
