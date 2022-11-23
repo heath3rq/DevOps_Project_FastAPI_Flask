@@ -14,7 +14,7 @@ format:
 lint:
 	pylint --disable=R,C,W1203,W0702 *.py
 
-build:
-	docker build -t deploy-fastapi .
+# build:
+# 	docker build -t deploy-fastapi .
 
-all: install lint test format build
+all: install lint test format
