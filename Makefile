@@ -2,8 +2,6 @@ install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
 		python -m pip install "dask[dataframe]" --upgrade
-		curl -sSL https://get.docker.com/ | sudo sh
-		sudo apt-get update && sudo apt-get upgrade
 
 test:
 	python -m pytest -vv --cov=app test_*.py
