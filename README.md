@@ -8,7 +8,7 @@ The project is for IDS 706 Data Engineering class at Duke University. The goal i
 
 
 ## Data Flow Diagram
-![Menu_Generator_App](https://user-images.githubusercontent.com/105904149/203687956-bc3ba66d-4111-4f24-bff1-3daf30512131.png)
+![menu_generator](https://user-images.githubusercontent.com/105904149/203690233-099d68b3-f7fb-4c75-9218-1ae4210aa89b.png)
 
 
 ## Demo Video
