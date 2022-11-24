@@ -1,12 +1,10 @@
 FROM python:3.10-bullseye
-
-WORKDIR /MS
-
-COPY ./requirements.txt /MS
-COPY ./menu_fastapi_app.py /MS
-COPY ./menu_flask_app.py /MS
-
+RUN mkdir -p /app
+COPY ./menu_fastapi_app.py /app
+COPY ./menu_flask_app.py /app
+WORKDIR /app
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
-
-ENTRYPOINT python menu_fastapi_app.py
+EXPOSE 8080
+CMD [ "menu_fastapi_app.py" ]
+ENTRYPOINT [ "python" ]
