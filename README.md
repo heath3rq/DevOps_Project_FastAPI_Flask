@@ -8,7 +8,7 @@ The project is for IDS 706 Data Engineering class at Duke University. The goal i
 
 
 ## Data Flow Diagram
-![FASTAPI DIAGRAM]()
+![Menu_Generator_App](https://user-images.githubusercontent.com/105904149/203687956-bc3ba66d-4111-4f24-bff1-3daf30512131.png)
 
 
 ## Demo Video
@@ -16,4 +16,4 @@ The project is for IDS 706 Data Engineering class at Duke University. The goal i
 
 
 ## Instructions To Replicate the Process Yourself
-
+To run the python scripts after cloning the repository, type in your terminal: python <filename>.py. An example is `python menu_fastapi_app.py`. You will then see a window pop-up in your Codespace instance to assess the temprorary web app. 
