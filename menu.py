@@ -51,6 +51,6 @@ def generatemenu(tips=0.20, tax=0.06875):
     randmain = random.choice(list(maincourse))
     randdessert = random.choice(list(desserts))
     randdrinks = random.sample(list(cocktails), 2)
-
-    result = f"""Your meal includes: \U0001F60B {randapp[0]} and {randapp[1]} as appetizers; \U0001F355 {randmain} as the main course; \U0001F368 {randdessert} as dessert; \U0001F378 {randdrinks[0]} and {randdrinks[1]} as your drink choices. The total cost after gratuity and tax is ${(1+tips+tax)*(appetizer[randapp[0]] + appetizer[randapp[1]] + maincourse[randmain] + desserts[randdessert] + cocktails[randdrinks[0]] + cocktails[randdrinks[1]]):,.2f}."""
+    
+    result = f"""Your meal includes: \U0001F60B {randapp[0]} and {randapp[1]} as appetizers; \U0001F355 {randmain} as the main course; \U0001F368 {randdessert} as dessert; \U0001F378 {randdrinks[0]} and {randdrinks[1]} as your drink choices.  \U0001F4B5 The total cost after gratuity and tax is ${(1+tips+tax)*(appetizer[randapp[0]] + appetizer[randapp[1]] + maincourse[randmain] + desserts[randdessert] + cocktails[randdrinks[0]] + cocktails[randdrinks[1]]):,.2f}."""
     return {"Result": result}
