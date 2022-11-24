@@ -4,7 +4,7 @@
 
 # Project Description
 
-The project is for IDS 706 Data Engineering class at Duke University. The goal is to create a Microservice that returns a JSON payload and performs a Data Engineering related task. We are expected to perform Continuous Integration with Github Actions and configure build server to deploy changes on build for Continuous Delivery, while using Flask/FastAPI. 
+The project is for IDS 706 Data Engineering class at Duke University. The goal is to create a Microservice that returns a JSON payload and performs a Data Engineering related task. We are expected to perform Continuous Integration with Github Actions and configure build server to deploy changes on build for Continuous Delivery. Therefore, I built a menu generator app for one of my favorite restuarant. Both Flask and FastAPI were leveraged to display the randomly generated menus. I then enabled Continuous Integration with Github Actions and Continuous Delivery with AWS CodeBuild.
 
 
 ## Data Flow Diagram
@@ -16,4 +16,14 @@ The project is for IDS 706 Data Engineering class at Duke University. The goal i
 
 
 ## Instructions To Replicate the Process Yourself
-To run the python scripts after cloning the repository, type in your terminal: python <filename>.py. An example is `python menu_fastapi_app.py`. You will then see a window pop-up in your Codespace instance to assess the temprorary web app. 
+To run the python scripts after cloning the repository, type in your terminal: python <filename>.py. An example is `python menu_fastapi_app.py`. There will be a window pop-up on the bottom right corner of your Codespace instance to assess the temprorary web app. A sample output looks like:
+```
+{
+Your meal includes: 
+😋 Confit Mushrooms and Chicory Caesar as appetizers; 
+🍕 Whole Fish as the main course; 
+🍨 Church Basement Cookie & Bar Plate as dessert; 
+🍸 Bottineau and Cobbler as your drink choices. 
+💵 The total cost after gratuity and tax is $149.71.
+}
+```
