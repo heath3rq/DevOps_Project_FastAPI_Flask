@@ -12,7 +12,7 @@ The project is for IDS 706 Data Engineering class at Duke University. The goal i
 
 
 ## Demo Video
-[Project 4 - Heather Qiu - Menu Generator - Watch Video]()
+[Project 4 - Heather Qiu - Menu Generator - Watch Video](https://youtu.be/UCVKkLASg94)
 
 
 ## Instructions To Replicate the Process Yourself
