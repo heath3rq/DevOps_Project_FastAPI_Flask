@@ -4,7 +4,7 @@
 
 ## Project Description
 
-The project is for IDS 706 Data Engineering class at Duke University. The goal is to create a Microservice that returns a JSON payload and performs a Data Engineering related task. We are expected to perform Continuous Integration with Github Actions and configure build server to deploy changes on build for Continuous Delivery. Therefore, I built a menu generator app for one of my favorite restuarant. Both Flask and FastAPI were leveraged to display the randomly generated menus. I then enabled Continuous Integration with Github Actions and Continuous Delivery with AWS CodeBuild.
+The project is done for IDS 706 Data Engineering class at Duke University. The goal is to create a Microservice that returns a JSON payload and performs a Data Engineering related task. We are expected to perform Continuous Integration with Github Actions and configure build server to deploy changes on build for Continuous Delivery. Therefore, I built a menu generator app for one of my favorite restuarant. Both Flask and FastAPI were leveraged to display the randomly generated menus. I then enabled Continuous Integration with Github Actions and Continuous Delivery with AWS CodeBuild.
 
 
 ## Data Flow Diagram
